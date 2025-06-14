@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 500px;
+    width: 700px;
+    border:  none;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: crimson;
+    border: none;
+    animation-name: circle;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes circle {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -310px;
+    }
+}

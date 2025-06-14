@@ -1,0 +1,27 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: crimson;
+}
+.container {
+    margin: auto;
+    margin-left: 570px;
+    margin-top: 150px;
+}
+i {
+    animation: icon 4s linear infinite;
+    font-size: 400px;
+    color: blue;
+}
+@keyframes icon {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+ 

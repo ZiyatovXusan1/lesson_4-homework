@@ -1,0 +1,206 @@
+
+.container{
+    position: relative; 
+    
+}
+
+.tog {
+    width: 870px;
+    height: 350px;
+    background-color: blue; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: 383px;
+    position: absolute;
+    left: 100px;
+}
+.tog2{
+    position: absolute;
+    width: 650px;
+    height: 290px; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: blue;
+    left: 530px;
+    top: 440px;
+}
+.tog3 {
+    position: absolute;
+    width: 850px;
+    height: 350px;
+    background-color: blue; 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    top: 383px;
+    right: 50px;
+}
+
+.sun {
+    position: absolute; 
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: yellow;
+    right: 500px;
+    animation: sun 4s linear infinite alternate;
+    z-index: -1;
+}
+
+@keyframes sun {
+    from {
+        transform: translateY(0);
+        background-color:yellow ;
+    }
+    to {
+        transform: translateY(500px);
+        background-color:rgb(255, 42, 0) ;
+    }
+}
+
+.cloud {
+    position: relative;
+    width: 240px;
+    height: 130px;
+    border-radius: 70px;
+    background-color: rgba(152, 157, 159, 0.994);
+    animation: cloud 4s linear infinite alternate;
+    top: 100px;
+    animation-timing-function : ease-in-out;
+}
+
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    top: -35px;
+    right: 80px;
+    width: 160px;
+    height: 150px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+.cloud::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: inherit;
+    right: -1px;
+}
+.cloud1 {
+    margin-top: 50px;
+    position: relative;
+    width: 100px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(165, 170, 172);
+    animation: cloud 4s linear infinite alternate;
+    animation-timing-function : ease-in-out;
+}
+
+.cloud1::after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    width: 150px;
+    height: 150px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+.cloud1::before{
+    position: absolute;
+    content: "";
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: inherit;
+    border-radius: 50%;
+    right: -10px;
+
+}
+
+@keyframes cloud {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(1290px);
+    }
+}
+
+.cloud1 {
+    margin-top: 100px;
+    margin-right: 50px;
+    width: 200px;
+    height: 130px;
+    border-radius: 70px;
+    background-color: rgb(154, 158, 160);
+    animation: cloud 4s linear infinite alternate;
+    animation-timing-function : ease-in-out;
+    animation-delay: 4s;
+}
+
+@keyframes cloud1 {
+    from {
+        transform: translateX(0);
+    }
+        
+    
+    to{
+        transform: translateX(1100px);
+    }
+        
+    
+}
+
+body {
+    background-color: #fff;
+    animation: moon 4s infinite alternate linear;
+}
+
+@keyframes moon {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: rgb(10, 10, 147);
+    }
+}
+.cloud2 {
+    position: absolute;
+    margin-top: -100px;
+    margin-right: 50px;
+    width: 200px;
+    height: 130px;
+    border-radius: 70px;
+    background-color: rgb(154, 158, 160);
+    animation: cloud2 2s linear infinite alternate;
+    top: 140px;
+    animation-timing-function : ease-in-out;
+}
+.cloud2::before{
+    position: absolute;
+    content: "";
+    top: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: inherit;
+    border-radius: 50%;
+    right: -10px;
+}
+.cloud2::after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    width: 150px;
+    height: 150px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+@keyframes cloud2 {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(1290px);
+    }
+}
